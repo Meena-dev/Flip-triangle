@@ -27,11 +27,12 @@ function dropWord(dropEvent){
  }
 function success(movesCount){
   if(movesCount===3){
-    window.location.href="success.html";
+  location.replace("https://i.pinimg.com/originals/30/f9/3a/30f93a089d3a8fe5eb949150b1c008e4.jpg");
   }
 }
 function failure(){
   if((wrongMoves===3)&&(wrongMoves!==movesCount)){
-      window.location.href="failure.html";
+  alert("You missed it.Click ok to retry.");
+  location.reload();
   }
 }
