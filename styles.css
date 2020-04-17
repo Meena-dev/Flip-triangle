@@ -17,7 +17,6 @@ body {
 }
 .mover {
   width:90px; height:90px;
-  border:1px dotted #f4f4f4;
   }
 .container{
     max-width: 600px;
