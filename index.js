@@ -27,11 +27,11 @@ function dropWord(dropEvent){
  }
 function success(movesCount){
   if(movesCount===3){
-    location.replace("C:/WebDevelopment/WebDevProjects/flip-triangle-v1/success.html");
+    window.location.href="C:/WebDevelopment/WebDevProjects/flip-triangle-v1/success.html";
   }
 }
 function failure(){
   if((wrongMoves===3)&&(wrongMoves!==movesCount)){
-    location.replace("C:/WebDevelopment/WebDevProjects/flip-triangle-v1/failure.html");
+      window.location.href="C:/WebDevelopment/WebDevProjects/flip-triangle-v1/failure.html";
   }
 }
