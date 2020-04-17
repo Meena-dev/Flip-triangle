@@ -20,18 +20,18 @@ function dropWord(dropEvent){
     var dragResult = dragId;
      if((dropResult==="box10" && dragResult==="box4" )|| (dropResult==="box22" && dragResult==="box16" )||(dropResult==="box7" && dragResult==="box19")){
        movesCount = movesCount+1;
-       checkResults(movesCount);
+       success(movesCount);
      }
      wrongMoves=wrongMoves+1;
-     refresh();
+     failure();
  }
-function checkResults(movesCount){
+function success(movesCount){
   if(movesCount===3){
-    $('#success').html('Well done!!.You won');
+    window.location.replace("C:/WebDevelopment/WebDevProjects/flip-triangle-v1/success.html");
   }
 }
-function refresh(){
+function failure(){
   if((wrongMoves===3)&&(wrongMoves!==movesCount)){
-    $('#failure').html('You lose.Try Again');
+    window.location.replace("C:/WebDevelopment/WebDevProjects/flip-triangle-v1/failure.html");
   }
 }

@@ -1,17 +1,15 @@
 body{
-  color: #40514E;
-  margin:0;
+  background-color: #f5f5f5;
   text-align: center;
   font-family: 'Merriweather', serif;
+  -ms-flex-align: center;
+  align-items: center;
+  padding:30px auto;
+  color: #364f6b;
 }
 h1{
   color: #66BFBF;
-  font-size: 5.625rem;
-  margin:50px,auto,0,auto;
+  font-size: 3.325rem;
+  margin:40px,auto,0,auto;
   font-family: 'Sacramento', cursive;
 }
-
-  h3{
-    color: #11999E;
-    font-family: 'Merriweather', serif;
-  }
